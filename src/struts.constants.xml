@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+	<constant name="struts.action.extension" value="action"/>
+	<constant name="struts.action.excludePattern" value="/css/.*,/js/.*,/image/.*"/>
+	
+	<constant name="struts.custom.i18n.resources" value="struts_messages"/>
+	<constant name="struts.multipart.parser" value="jakarta"/>
+	<constant name="struts.multipart.maxSize" value="1"/>
+	
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true"></constant>
+	
+</struts>

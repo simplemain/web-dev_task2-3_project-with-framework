@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <display-name>hello-world</display-name>
+    
+    <filter>
+        <filter-name>launch</filter-name>
+        <filter-class>com.simplemain.filter.LaunchFilter</filter-class>
+        <load-on-startup>1</load-on-startup> 
+    </filter>
+    
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+	
+	<!-- mapping -->
+	<filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+</web-app>

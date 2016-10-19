@@ -1,0 +1,12 @@
+# proxool
+
+# query, should use name proxool.mysql-query
+jdbc-query.proxool.alias = mysql-query
+jdbc-query.proxool.driver-url = jdbc:mysql://localhost/simplemain?autoReconnect=true&useUnicode=true&characterEncoding=utf-8
+jdbc-query.proxool.driver-class = com.mysql.jdbc.Driver
+jdbc-query.user = root
+jdbc-query.password = 
+jdbc-query.proxool.maximum-connection-count = 10
+jdbc-query.proxool.minimum-connection-count = 3
+jdbc-query.proxool.simultaneous-build-throttle = 10
+jdbc-query.proxool.house-keeping-test-sql = select 1
